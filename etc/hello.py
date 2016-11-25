@@ -8,6 +8,6 @@ CONFIG = {
     '--timeout=60',
     '--log-level=debug',
     '--log-file=/home/box/gunicorn.log',
-    'hello',
-  ),
+    'hello:app'
+  )
 }
