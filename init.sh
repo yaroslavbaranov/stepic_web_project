@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
-sudo ln -sf /home/box/web/etc/nginx.conf  /etc/nginx/sites-enabled/test.conf
+sudo ln -sf /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/test.conf
 sudo /etc/init.d/nginx restart
 
-sudo ln -sf /home/box/web/etc/hello.py   /etc/gunicorn.d/test-wsgi
-sudo ln -sf /home/box/web/etc/qa.py   /etc/gunicorn.d/qa.py
+sudo ln -sf /home/box/web/etc/hello.py /etc/gunicorn.d/test
 sudo /etc/init.d/gunicorn restart
